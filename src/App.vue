@@ -19,28 +19,7 @@ export default {
       width: '200px',
       height: '200px',
       margin: '10px 0 0 10px',
-      imgUrls: [
-        {
-          url: 'https://surroundoa-test.haiermoney.com/image/20190131zm32edqzcompress.jpg',
-          desc: '图片一'
-        },
-        {
-          url: 'https://surroundoa-test.haiermoney.com/image/201901314ef7rnk6compress.jpg',
-          desc: '图片二'
-        },
-        {
-          url: 'https://surroundoa-test.haiermoney.com/image/20190131mnazbwl4compress.jpg',
-          desc: '图片仨'
-        },
-        {
-          url: 'https://surroundoa-test.haiermoney.com/image/201901311fhikivfcompress.jpg',
-          desc: '图片四'
-        },
-        {
-          url: 'https://surroundoa-test.haiermoney.com/image/20190131prz2n7oucompress.jpg',
-          desc: '图片五'
-        }
-      ]
+      imgUrls: []
     }
   },
   methods: {
