@@ -1,4 +1,4 @@
-# vue-upload-tools
+# vue-picture-preview-tools
 
 > vue load tools，contain compress,rotate
 
