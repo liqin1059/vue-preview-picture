@@ -30,7 +30,7 @@ npm run build
 # npm install
 npm install vue-picture-preview --save
 ```
-## 例
+## 引入
 在main.js中引入
 ```js
 import preview from 'picture-list'
