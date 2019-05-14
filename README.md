@@ -27,7 +27,7 @@ npm run build
 ## npm
 
 ``` bash
-# install dependencies
+# npm install
 npm install vue-picture-preview --save
 ```
 ## 例
