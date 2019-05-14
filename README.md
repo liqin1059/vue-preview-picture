@@ -67,8 +67,8 @@ Vue.use(preview)
 ```
 # 效果展示
 
-![Image text](https://raw.githubusercontent.com/liqin1059/images/master/vue-preview-picture/picture-box.png?token=AGHRB674IL3PYABRIRERVRS43JUQ2)
-![Image text](https://raw.githubusercontent.com/liqin1059/images/master/vue-preview-picture/picture-preview.png?token=AGHRB62N347D53BPR5LJKAK43JUSA)
+![Image text](https://raw.githubusercontent.com/liqin1059/images/master/vue-preview-picture/picture-box.png?token=AGHRB62USUH73GM52SAPHVS43KCT6)
+![Image text](https://raw.githubusercontent.com/liqin1059/images/master/vue-preview-picture/picture-preview.png?token=AGHRB65XMRKEPA7UYJ5JJBS43KCVW)
 
 源码地址：https://github.com/seikann/upload-vue-m
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
