@@ -7,17 +7,25 @@
       :margin="margin"
       :img-urls="imgUrls">
     </picture-list>
+    <ul>
+      <li class="demo-imgs" v-for="(item, index) in imgUrls" :key="index">
+        <img :src="item.url" alt="" @click="pictureClick(item, index)">
+      </li>
+    </ul>
+    <picture-preview
+        v-if="previewShow"
+        :picture-index="pictureIndex"
+        :picture-data="pictureData"
+        :is-delete="isDelete"
+        @picture-out="previewShow = false">
+      </picture-preview>
   </div>
 </template>
 
 <script>
-import pictureList from './packages/picture-list/picture-list'
 
 export default {
   name: 'app',
-  components: {
-    pictureList
-  },
   data () {
     return {
       boxWidth: '100%',
@@ -36,10 +44,21 @@ export default {
           url: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3885463997,795370374&fm=26&gp=0.jpg',
           desc: '图片仨'
         }
-      ]
+      ],
+      pictureIndex: 0,
+      pictureData: [],
+      isDelete: false,
+      previewShow: false
     }
   },
   methods: {
+    // 查看图片
+    pictureClick(item, index) {
+      this.$data.previewShow = true;
+      this.$data.pictureData = this.$data.imgUrls;
+      this.$data.pictureIndex = index;
+      this.$data.isDelete = false;
+    }
   }
 }
 </script>
@@ -83,5 +102,10 @@ a {
 }
 .fadein-fade-enter, .fadein-fade-leave-to{
   opacity: 0;
+}
+.demo-imgs{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
 }
 </style>

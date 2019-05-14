@@ -30,21 +30,30 @@ import preview from 'picture-list'
 Vue.use(preview)
 ```
 在组件中使用
+> 包含图片列表&&展示
 ``` html
 <picture-list
-      :box-width="boxWidth" // 图片列表盒子宽
-      :width="width"  // 图片宽度
-      :height="height" // 图片高度
-      :margin="margin" // 图片边距
-      :img-urls="imgUrls"> // 图片数组
-    </picture-list>
+  :box-width="boxWidth" // 图片列表盒子宽
+  :width="width"  // 图片宽度
+  :height="height" // 图片高度
+  :margin="margin" // 图片边距
+  :img-urls="imgUrls"> // 图片数组
+</picture-list>
+```
+> 仅做图片查看
+``` html
+<picture-preview
+  :picture-index="pictureIndex" // 当前点击图片的index
+  :picture-data="pictureData" // 图片数组
+  :is-delete="isDelete">  // 删除事件
+</picture-preview>
 ```
 图片数组格式
 ```
 [
   {
-  url: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3345425463,2829351688&fm=26&gp=0.jpg',
-  desc: '图片一'
+    url: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3345425463,2829351688&fm=26&gp=0.jpg',
+    desc: '图片一'
   },
   {
     url: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2820343167,442028568&fm=26&gp=0.jpg',
