@@ -1,9 +1,11 @@
 # vue-picture-preview
 
 > vue picture preview tools👫
-# 👧图片列表&&图片查看工具
+
 > 支持pc端，移动端
+
 > 支持放大
+
 > 支持键盘事件
 
 🙋  
