@@ -23,6 +23,13 @@ npm run dev
 # build for production with minification
 npm run build
 ```
+
+## npm
+
+``` bash
+# install dependencies
+npm install vue-picture-preview --save
+```
 ## 例
 在main.js中引入
 ```js
