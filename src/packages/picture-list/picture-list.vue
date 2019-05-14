@@ -22,7 +22,7 @@
 import picturePreview from '../picture-preview/picture-preview.vue';
 
 export default {
-  name: 'app',
+  name: 'picture-list',
   components: {
     'picture-preview': picturePreview
   },
@@ -64,7 +64,7 @@ export default {
     showPicture(index, item) {
       this.$data.previewShow = true;
       this.$data.pictureIndex = index;
-      this.$data.pictureData = this.$data.imgUrls;
+      this.$data.pictureData = this.imgUrls;
       this.$data.isDelete = false;
     }
   }

@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import 'swiper/dist/css/swiper.css';
-import MoorUI from './index.js'
-Vue.use(MoorUI)
 
 new Vue({
   el: '#app',

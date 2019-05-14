@@ -8,9 +8,9 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'picture-list.js',
-    library: 'picture-list',
+    library: 'PictureList',
     libraryTarget: 'umd',
-    umdNameDefine: true
+    umdNamedDefine: true
   },
   module: {
     rules: [

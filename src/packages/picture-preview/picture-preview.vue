@@ -1,4 +1,5 @@
 <template>
+  <transition name="fade">
   <div class="full-picture-bg">
     <!-- <img class="back-images" @click.stop.prevent="pictureOut" src="../../assets/home_back_withe_icon_normal@2x.png" alt="" srcset=""> -->
     <img class="delete-images" @click.stop.prevent="deletePic" v-if="isDelete" src="../../assets/home_delate_icon_normal@2x.png" alt="" srcset="">
@@ -19,6 +20,7 @@
       <div class="swiper-button-next"></div>
     </div>
   </div>
+  </transition>
 </template>
 <script>
 import Swiper from 'swiper';
@@ -31,6 +33,22 @@ export default {
       pictureLists: [],
       clickNum: 0
     };
+  },
+  props: {
+    pictureIndex: {
+      type: Number,
+      default: 0
+    },
+    pictureData: {
+      type: Array,
+      default() {
+        return [];
+      }
+    },
+    isDelete: {
+      type: Boolean,
+      default: false
+    }
   },
   methods: {
     // 判断单击双击
@@ -58,6 +76,7 @@ export default {
   },
   mounted() {
     this.$data.pictureSwiper = new Swiper('.picture-container', {
+      speed: 800,
       spaceBetween: 0,
       loop: false,
       zoom: true,
@@ -66,8 +85,10 @@ export default {
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
       mousewheel: true,
-      effect : 'coverflow',
-      loadOnTransitionStart: true,
+      effect : 'slide',
+      // slidesPerView: 3,
+      // centeredSlides: true,
+      // loadOnTransitionStart: true,
       // pagination: {
       //   el: '.swiper-pagination'
       // },
@@ -86,26 +107,19 @@ export default {
     // console.log(this.$data.pictureSwiper);
     // 设置当前点击的图片为放大h后的的激活Index
     this.$data.pictureSwiper.slideToLoop(this.pictureIndex, 1000, false);
-  },
-  props: {
-    pictureIndex: {
-      type: Number,
-      default: 0
-    },
-    pictureData: {
-      type: Array,
-      default() {
-        return [];
-      }
-    },
-    isDelete: {
-      type: Boolean,
-      default: false
-    }
   }
 };
 </script>
 <style lang="scss" scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
 .back-images{
   position: absolute;
   top: 10px;
