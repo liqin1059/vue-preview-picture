@@ -1,4 +1,4 @@
-# vue-picture-preview
+# vue-picture-preview-l
 
 > vue picture preview tools👫
 
@@ -16,7 +16,7 @@
 
 ``` bash
 # npm install
-npm install vue-picture-preview --save
+npm install vue-picture-preview-l --save
 ```
 ## 引入
 在main.js中引入
