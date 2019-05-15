@@ -21,7 +21,7 @@ npm install vue-picture-preview --save
 ## 引入
 在main.js中引入
 ```js
-import preview from 'picture-list'
+import preview from 'vue-preview-picture'
 Vue.use(preview)
 ```
 在组件中使用
