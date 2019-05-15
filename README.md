@@ -1,6 +1,6 @@
-# vue-picture-preview-l
+# vue-preview-picture-l
 
-> vue picture preview tools👫
+> vue preview picture tools👫
 
 > 支持pc端，移动端
 
@@ -10,13 +10,13 @@
 
 🙋  
 🙋 单击关闭查看图片窗口
-🙋
+🙋 双击放大
 
 ## npm
 
 ``` bash
 # npm install
-npm install vue-picture-preview-l --save
+npm install vue-preview-picture-l --save
 ```
 ## 引入
 在main.js中引入
