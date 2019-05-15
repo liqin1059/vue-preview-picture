@@ -111,6 +111,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import '../../../node_modules/swiper/dist/css/swiper.css';
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
